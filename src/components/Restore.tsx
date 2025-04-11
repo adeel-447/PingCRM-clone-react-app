@@ -17,8 +17,8 @@ const RestoreNotification: React.FC<RestoreNotificationProps> = ({
     try {
       const endpoint =
         type === "organization"
-          ? `/organizations/${id}/restore`
-          : `/contacts/${id}/restore`;
+          ? `organizations/${id}/restore`
+          : `contacts/${id}/restore`;
 
       const response = await axios.patch(`${API_URL}${endpoint}`);
 

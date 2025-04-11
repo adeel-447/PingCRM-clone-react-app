@@ -47,8 +47,8 @@ const Edit = () => {
   const handleUpdate = async () => {
     try {
       const url = isContact
-        ? `${API_URL}/contacts/${formData.id}/`
-        : `${API_URL}/organizations/${formData.id}/`;
+        ? `${API_URL}contacts/${formData.id}/`
+        : `${API_URL}organizations/${formData.id}/`;
       await axios.patch(url, formData);
       alert("The entry has been updated successfully.");
     } catch (err) {
@@ -59,10 +59,10 @@ const Edit = () => {
   const handleDelete = async () => {
     try {
       const url = isContact
-        ? `${API_URL}/contacts/${formData.id}/`
-        : `${API_URL}/organizations/${formData.id}/`;
+        ? `${API_URL}contacts/${formData.id}/`
+        : `${API_URL}organizations/${formData.id}/`;
       await axios.delete(url);
-      navigate(isContact ? "/contacts" : "/organizations");
+      navigate(isContact ? "contacts" : "organizations");
     } catch (err) {
       console.error("Delete failed", err);
     }
