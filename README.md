@@ -2,6 +2,21 @@
 
 **PingCRM** is a TypeScript-based web application built with React for the frontend and FastAPI for the backend. It serves as a lightweight customer relationship management (CRM) tool that allows users to manage contacts and organizations. The application features APIs for creating, reading, updating, and deleting both contacts and organizations, with a dynamic UI that adapts based on the entity type. It uses modern React patterns like modular components, dynamic forms, and data tables, while the FastAPI backend provides a performant, asynchronous REST interface. PingCRM is designed to be an efficient, developer-friendly CRM system ideal for small teams and demos.
 
+## 📸 Screenshots
+
+### Contacts
+![Contacts Screenshot](assets/Contacts.png)
+
+![Contact Screenshot](assets/contact-detail.png)
+
+### Organizations
+![Organizations Screenshot](assets/Organization.png)
+
+![Organizations Screenshot](assets/organization-detail.png)
+
+### Soft Delete Feature
+![Organizations Screenshot](assets/softDelete.png)
+
 ## For Backend
 
 ### 1. **Create a virtual environment**
